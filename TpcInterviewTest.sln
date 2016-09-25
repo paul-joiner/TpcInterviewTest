@@ -10,7 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ConsoleApp", "src\ConsoleApp\ConsoleApp.xproj", "{1838DC54-23C8-4240-BA0D-5A32B51AEE25}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Services", "src\Services\Services.xproj", "{7A047E20-F413-4AB2-8754-11109398FE64}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Services.UnitTests", "src\Services.UnitTests\Services.UnitTests.xproj", "{9664BBBF-4752-4930-B330-D64AABCC5247}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +20,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1838DC54-23C8-4240-BA0D-5A32B51AEE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1838DC54-23C8-4240-BA0D-5A32B51AEE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1838DC54-23C8-4240-BA0D-5A32B51AEE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1838DC54-23C8-4240-BA0D-5A32B51AEE25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A047E20-F413-4AB2-8754-11109398FE64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A047E20-F413-4AB2-8754-11109398FE64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A047E20-F413-4AB2-8754-11109398FE64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A047E20-F413-4AB2-8754-11109398FE64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9664BBBF-4752-4930-B330-D64AABCC5247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9664BBBF-4752-4930-B330-D64AABCC5247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9664BBBF-4752-4930-B330-D64AABCC5247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9664BBBF-4752-4930-B330-D64AABCC5247}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{1838DC54-23C8-4240-BA0D-5A32B51AEE25} = {BD874EF2-4891-4D83-A9A6-9C7FAF0D7472}
+		{7A047E20-F413-4AB2-8754-11109398FE64} = {BD874EF2-4891-4D83-A9A6-9C7FAF0D7472}
+		{9664BBBF-4752-4930-B330-D64AABCC5247} = {BD874EF2-4891-4D83-A9A6-9C7FAF0D7472}
 	EndGlobalSection
 EndGlobal
