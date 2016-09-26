@@ -10,7 +10,7 @@ We are using mochajs for testing. Use `npm run test` to execute the test runner.
 
 See the comments in `hello.js` and `hello-test.js` on what to write.
 
-## C#
+## csharp
 We are using dotnet core. Fire up the Visual Studio and load `TpcInterviewTest.sln`
 
 This is a short refactoring exercise.
