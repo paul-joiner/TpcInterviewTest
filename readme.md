@@ -8,7 +8,8 @@ Fire up a terminal and change to `./src/JsStuff` and run `npm install`
 
 We are using mochajs for testing. Use `npm run test` to execute the test runner.
 
-See the comments in `hello.js` and `hello-test.js` on what to write.
+See the comments in `hello.js`, `hello-test.js`, `objects.js` and `objects-test.js` on what to write.
+
 
 ## csharp
 We are using dotnet core. Fire up the Visual Studio and load `TpcInterviewTest.sln`
