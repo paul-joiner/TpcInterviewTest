@@ -22,25 +22,51 @@ namespace Services
     /// </summary>
     public class Logger
     {
-        public void Log(string message, LogType logType)
-        {
-            switch (logType)
-            {
-                case LogType.Console:
-                    Console.WriteLine(message);
-                    break;
+        IMessageLogger _messageLogger;
 
-                case LogType.Queue:
-                    // Code to send message to printer
-                    break;
+        public Logger(IMessageLogger messageLogger)
+        {
+            _messageLogger = messageLogger;
+        }
+
+        public void Log(string message)
+        {
+            _messageLogger.Log(message);
+        }
+    }
+
+    public interface IMessageLogger
+    {
+        void Log(string message);
+    }
+
+    public class ConsoleLogger : IMessageLogger
+    {
+        public void Log(string message)
+        {
+            if (message == "")
+            {
+                throw new Exception("Message must not be zero length string.");
+            }
+            else
+            {
+                Console.WriteLine(message);
             }
         }
     }
 
-
-    public enum LogType
+    public class QueueLogger : IMessageLogger
     {
-        Console,
-        Queue
+        public void Log(string message)
+        {
+            if (message == "")
+            {
+                throw new Exception("Message must not be zero length string.");
+            }
+            else
+            {
+                // Code to send message to printer
+            }
+        }
     }
 }
